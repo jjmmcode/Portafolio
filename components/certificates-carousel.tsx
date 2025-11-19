@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 
@@ -17,6 +17,7 @@ interface CertificatesCarouselProps {
 
 export function CertificatesCarousel({ certificates }: CertificatesCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0)
+  const [isPaused, setIsPaused] = useState(false)
 
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % certificates.length)
@@ -24,6 +25,22 @@ export function CertificatesCarousel({ certificates }: CertificatesCarouselProps
 
   const prevSlide = () => {
     setCurrentIndex((prev) => (prev - 1 + certificates.length) % certificates.length)
+  }
+
+  useEffect(() => {
+    if (isPaused) return
+
+    const interval = setInterval(() => {
+      nextSlide()
+    }, 5000)
+
+    return () => clearInterval(interval)
+  }, [currentIndex, isPaused, certificates.length])
+
+  const handleManualChange = (action: () => void) => {
+    setIsPaused(true)
+    action()
+    setTimeout(() => setIsPaused(false), 10000)
   }
 
   return (
@@ -64,7 +81,7 @@ export function CertificatesCarousel({ certificates }: CertificatesCarouselProps
         variant="ghost"
         size="icon"
         className="absolute left-1 top-1/3 -translate-y-1/2 bg-stone/80 hover:bg-stone text-text-primary h-7 w-7"
-        onClick={prevSlide}
+        onClick={() => handleManualChange(prevSlide)}
         aria-label="Anterior"
       >
         <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -76,7 +93,7 @@ export function CertificatesCarousel({ certificates }: CertificatesCarouselProps
         variant="ghost"
         size="icon"
         className="absolute right-1 top-1/3 -translate-y-1/2 bg-stone/80 hover:bg-stone text-text-primary h-7 w-7"
-        onClick={nextSlide}
+        onClick={() => handleManualChange(nextSlide)}
         aria-label="Siguiente"
       >
         <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -93,7 +110,7 @@ export function CertificatesCarousel({ certificates }: CertificatesCarouselProps
                 ? 'bg-text-primary w-4'
                 : 'bg-stone-light hover:bg-text-muted'
             }`}
-            onClick={() => setCurrentIndex(index)}
+            onClick={() => handleManualChange(() => setCurrentIndex(index))}
             aria-label={`Ir al certificado ${index + 1}`}
           />
         ))}
