@@ -193,7 +193,7 @@ export default function Portfolio() {
             image="/project_1.png"
             links={{
               demo: '#',
-              github: '#',
+              github: 'https://github.com/markawaii/cl_ferremas_monolitico-laravel', // agregado enlace de GitHub de Ferremas
             }}
           />
           
@@ -210,7 +210,7 @@ export default function Portfolio() {
             image="/project_2.png"
             links={{
               demo: '#',
-              github: '#',
+              github: 'https://github.com/jjmmcode/To_Do_App', // agregado enlace de GitHub de To-Do App
             }}
             icon="check"
           />
