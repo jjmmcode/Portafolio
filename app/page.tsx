@@ -209,7 +209,7 @@ export default function Portfolio() {
             ]}
             image="/project_2.png"
             links={{
-              demo: '#',
+              demo: 'https://to-do-app-jet-one.vercel.app/',
               github: 'https://github.com/jjmmcode/To_Do_App', // agregado enlace de GitHub de To-Do App
             }}
             icon="check"
