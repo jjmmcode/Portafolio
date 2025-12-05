@@ -159,12 +159,13 @@ export default function Portfolio() {
           <h2 className="mb-8 text-2xl font-semibold">Experiencia</h2>
           
           <ExperienceCard
-            title="Ejecutivo de Cobranzas Telefónicas"
-            company="Invercard Ltda."
-            period="ago. 2021 - mar. 2024"
-            description="Trabajé como ejecutivo de cobranzas telefónicas para Caja Compensación Los Andes. Además realicé reparaciones de computadoras y dispositivos. También recibí formación en back-office, que incluyó la gestión de tareas de mensajería masiva, carga y descarga de base de datos, y su configuración dentro del sistema de marcado automático utilizado por el equipo de cobranzas."
+            title="Ingeniero de Datos Jr."
+            company="2STG / BCI"
+            period="dic. 2025 - Actualidad"
+            description="Desarrollo y mantengo pipelines de datos en entornos cloud (AWS y Databricks), participo en procesos de integración entre equipos de Arquitectura, Aplicaciones y SRE, y apoyo en la implementación de soluciones orientadas a gobernanza, calidad y disponibilidad de datos. Colaboro con la Product Owner en la definición de tareas y prioridades, y doy soporte técnico en la operación diaria del área de Arquitectura Digital."
+            icon={Database}
           />
-          
+
           <ExperienceCard
             title="Ejecutivo Cobranzas Telefónicas"
             company="FASTCO"
@@ -172,12 +173,11 @@ export default function Portfolio() {
             description="Trabajé como ejecutivo de cobranzas telefónicas, gestionando cuentas judiciales y castigados para clientes como CENCOSUD (segmento judicial/castigo). Mis responsabilidades incluyen la gestión de cuentas morosas, negociación de acuerdos de pago y asegurar el cumplimiento con los procedimientos legales de cobranza."
           />
           <ExperienceCard
-            title="Ingeniero de Datos Jr."
-            company="2STG / BCI"
-            period="dic. 2025 - Actualidad"
-            description="Desarrollo y mantengo pipelines de datos en entornos cloud (AWS y Databricks), participo en procesos de integración entre equipos de Arquitectura, Aplicaciones y SRE, y apoyo en la implementación de soluciones orientadas a gobernanza, calidad y disponibilidad de datos. Colaboro con la Product Owner en la definición de tareas y prioridades, y doy soporte técnico en la operación diaria del área de Arquitectura Digital."
-            icon={Database}
-          />
+            title="Ejecutivo de Cobranzas Telefónicas"
+            company="Invercard Ltda."
+            period="ago. 2021 - mar. 2024"
+            description="Trabajé como ejecutivo de cobranzas telefónicas para Caja Compensación Los Andes. Además realicé reparaciones de computadoras y dispositivos. También recibí formación en back-office, que incluyó la gestión de tareas de mensajería masiva, carga y descarga de base de datos, y su configuración dentro del sistema de marcado automático utilizado por el equipo de cobranzas."
+          />         
         </section>
 
         {/* Projects Section */}
