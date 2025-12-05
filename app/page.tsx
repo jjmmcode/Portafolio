@@ -160,7 +160,7 @@ export default function Portfolio() {
           
           <ExperienceCard
             title="Ingeniero de Datos Jr."
-            company="2STG / BCI"
+            company="2STG y Líder BCI"
             period="dic. 2025 - Actualidad"
             description="Desarrollo y mantengo pipelines de datos en entornos cloud (AWS y Databricks), participo en procesos de integración entre equipos de Arquitectura, Aplicaciones y SRE, y apoyo en la implementación de soluciones orientadas a gobernanza, calidad y disponibilidad de datos. Colaboro con la Product Owner en la definición de tareas y prioridades, y doy soporte técnico en la operación diaria del área de Arquitectura Digital."
             icon={Database}
