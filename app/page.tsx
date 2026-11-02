@@ -13,7 +13,7 @@ export default function Portfolio() {
     <div className="min-h-screen bg-background text-text-primary">
       <div className="mx-auto max-w-4xl px-6 py-16">
         {/* Header Section */}
-        <div className="mb-8 flex flex-col items-start gap-4 md:mb-12 md:flex-row md:items-center md:gap-6">
+        <div className="mb-6 flex flex-col items-start gap-4 md:mb-12 md:flex-row md:items-center md:gap-6">
           <Avatar className="h-32 w-32 border-2 border-stone-light">
             <AvatarImage src="/avatar.jpeg" alt="Joel Medina" />
             <AvatarFallback>JM</AvatarFallback>
@@ -36,18 +36,19 @@ export default function Portfolio() {
                 className="min-h-11 max-w-full bg-button-bg text-text-primary hover:bg-button-hover"
                 asChild
               >
-                <a className="min-w-0 max-w-full" href="mailto:joeljesus30030@gmail.com">
+                <a className="min-w-0 max-w-full" href="mailto:joeljesus30030@gmail.com" aria-label="Email">
                   <svg className="mr-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
-                  <span className="break-all">joeljesus30030@gmail.com</span>
+                  <span className="hidden break-all sm:inline">joeljesus30030@gmail.com</span>
+                  <span className="sm:hidden">Email</span>
                 </a>
               </Button>
               
               <Button
                 variant="ghost"
                 size="icon"
-                className="h-11 w-11 bg-button-bg text-button-icon hover:bg-button-hover sm:h-9 sm:w-9"
+                className="!h-11 !w-11 bg-button-bg text-button-icon hover:bg-button-hover sm:!h-9 sm:!w-9"
                 asChild
               >
                 <a href="CV_Joel_Medina.pdf" aria-label="CV" target="_blank">
@@ -60,7 +61,7 @@ export default function Portfolio() {
               <Button
                 variant="ghost"
                 size="icon"
-                className="h-11 w-11 bg-button-bg text-button-icon hover:bg-button-hover sm:h-9 sm:w-9"
+                className="!h-11 !w-11 bg-button-bg text-button-icon hover:bg-button-hover sm:!h-9 sm:!w-9"
                 asChild
               >
                 <a href="https://github.com/jjmmcode" aria-label="GitHub" target="_blank">
@@ -71,7 +72,7 @@ export default function Portfolio() {
               <Button
                 variant="ghost"
                 size="icon"
-                className="h-11 w-11 bg-button-bg text-button-icon hover:bg-button-hover sm:h-9 sm:w-9"
+                className="!h-11 !w-11 bg-button-bg text-button-icon hover:bg-button-hover sm:!h-9 sm:!w-9"
                 asChild
               >
                 <a href="https://www.linkedin.com/in/jjmmcode/" aria-label="LinkedIn" target="_blank">
