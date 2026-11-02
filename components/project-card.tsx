@@ -9,6 +9,7 @@ interface ProjectCardProps {
   description: string
   technologies: Array<{ icon: string; label: string }>
   image?: string
+  imageAlt?: string
   links?: {
     demo?: string
     github?: string
@@ -22,6 +23,7 @@ export function ProjectCard({
   description, 
   technologies, 
   image,
+  imageAlt,
   links,
   icon = 'package'
 }: ProjectCardProps) {
@@ -80,7 +82,7 @@ export function ProjectCard({
         <div className="w-full flex-shrink-0 lg:w-64">
           <div className="flex h-full min-h-40 items-center justify-center overflow-hidden rounded-lg border border-stone-light bg-stone p-4 transition-colors group-hover:border-stone-light">
             {image ? (
-              <Image src={image} alt={`Vista previa de ${title}`} width={256} height={160} className="h-auto w-full object-contain" />
+              <Image src={image} alt={imageAlt ?? `Vista previa de ${title}`} width={256} height={160} className="h-auto w-full object-contain" />
             ) : IconComponent ? (
               <div className="flex flex-col items-center gap-3 text-center text-text-muted">
                 <div className="flex h-14 w-14 items-center justify-center rounded-full border border-stone-light bg-stone-900 text-button-icon">
