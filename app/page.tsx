@@ -275,8 +275,9 @@ export default function Portfolio() {
                 pdfUrl: "/cert_efset.pdf"
               },
               {
-                title: "Certificación en Análisis de Software y Desarrollo",
-                description: "Certificado de Módulo emitido por DUOC UC.",
+                title: "Certificaciones de Módulos — Duoc UC",
+                description:
+                  "Certificado institucional emitido en noviembre de 2026 que acredita ocho módulos de Ingeniería en Informática.",
                 image: "/CERT_JOEL_MEDINA_DUOC-1.png",
                 pdfUrl: "/CERT_JOEL_MEDINA_DUOC.pdf"
               },
