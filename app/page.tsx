@@ -201,7 +201,7 @@ export default function Portfolio() {
             image="/project_1.png"
             links={{
               demo: '#',
-              github: 'https://github.com/markawaii/cl_ferremas_monolitico-laravel', // agregado enlace de GitHub de Ferremas
+              github: 'https://github.com/jjmmcode/cl_ferremas_monolitico-laravel', // agregado enlace de GitHub de Ferremas
             }}
           />
           
