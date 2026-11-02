@@ -80,7 +80,7 @@ export function CertificatesCarousel({ certificates }: CertificatesCarouselProps
       <Button
         variant="ghost"
         size="icon"
-        className="absolute left-1 top-1/3 -translate-y-1/2 bg-stone/80 hover:bg-stone text-text-primary h-7 w-7"
+        className="absolute left-1 top-1/3 h-10 w-10 -translate-y-1/2 bg-stone/80 text-text-primary hover:bg-stone"
         onClick={() => handleManualChange(prevSlide)}
         aria-label="Anterior"
       >
@@ -92,7 +92,7 @@ export function CertificatesCarousel({ certificates }: CertificatesCarouselProps
       <Button
         variant="ghost"
         size="icon"
-        className="absolute right-1 top-1/3 -translate-y-1/2 bg-stone/80 hover:bg-stone text-text-primary h-7 w-7"
+        className="absolute right-1 top-1/3 h-10 w-10 -translate-y-1/2 bg-stone/80 text-text-primary hover:bg-stone"
         onClick={() => handleManualChange(nextSlide)}
         aria-label="Siguiente"
       >
@@ -105,14 +105,19 @@ export function CertificatesCarousel({ certificates }: CertificatesCarouselProps
         {certificates.map((_, index) => (
           <button
             key={index}
-            className={`h-1 w-1 rounded-full transition-all ${
-              index === currentIndex
-                ? 'bg-text-primary w-4'
-                : 'bg-stone-light hover:bg-text-muted'
-            }`}
+            className="flex h-10 w-10 items-center justify-center rounded-full"
             onClick={() => handleManualChange(() => setCurrentIndex(index))}
             aria-label={`Ir al certificado ${index + 1}`}
-          />
+          >
+            <span
+              aria-hidden="true"
+              className={`h-2 rounded-full transition-all ${
+                index === currentIndex
+                  ? 'w-6 bg-text-primary'
+                  : 'w-2 bg-stone-light hover:bg-text-muted'
+              }`}
+            />
+          </button>
         ))}
       </div>
     </div>

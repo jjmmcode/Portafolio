@@ -21,7 +21,7 @@ export function ExperienceCard({ title, company, period, description, icon: Icon
       </div>
       
       <div className="flex-1">
-        <div className="mb-2 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+        <div className="mb-2 flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between sm:gap-2">
           <div className="flex flex-wrap items-center gap-2">
             <h3 className="text-lg font-semibold">{title}</h3>
             {current && (
@@ -32,11 +32,11 @@ export function ExperienceCard({ title, company, period, description, icon: Icon
           </div>
           <span className="text-sm text-text-muted">{period}</span>
         </div>
-        <p className="mb-3 text-text-secondary">
+        <p className="mb-2 text-text-secondary sm:mb-3">
           {company}
           {modality && <span className="text-text-muted"> · {modality}</span>}
         </p>
-        <p className="leading-relaxed text-text-muted text-sm">{description}</p>
+        <p className="text-sm leading-[1.6] text-text-muted sm:leading-relaxed">{description}</p>
       </div>
     </div>
   )

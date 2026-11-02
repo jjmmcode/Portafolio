@@ -13,41 +13,41 @@ export default function Portfolio() {
     <div className="min-h-screen bg-background text-text-primary">
       <div className="mx-auto max-w-4xl px-6 py-16">
         {/* Header Section */}
-        <div className="mb-12 flex flex-col items-start gap-6 md:flex-row md:items-center">
+        <div className="mb-8 flex flex-col items-start gap-4 md:mb-12 md:flex-row md:items-center md:gap-6">
           <Avatar className="h-32 w-32 border-2 border-stone-light">
             <AvatarImage src="/avatar.jpeg" alt="Joel Medina" />
             <AvatarFallback>JM</AvatarFallback>
           </Avatar>
           
           <div className="flex-1">
-            <h1 className="mb-2 text-4xl font-bold text-balance">Joel Medina</h1>
-            <p className="mb-3 text-xl text-text-secondary">Junior Data Engineer &amp; Software Developer</p>
-            <div className="mb-4 flex items-center gap-2 text-text-muted">
+            <h1 className="mb-1 text-4xl font-bold text-balance sm:mb-2">Joel Medina</h1>
+            <p className="mb-2 text-xl text-text-secondary sm:mb-3">Junior Data Engineer &amp; Software Developer</p>
+            <div className="mb-3 flex items-center gap-2 text-text-muted sm:mb-4">
               <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
               </svg>
               <span>Santiago, Chile</span>
             </div>
             
-            <div className="flex flex-wrap gap-3">
+            <div className="flex max-w-full flex-wrap gap-2 sm:gap-3">
               <Button
                 variant="secondary"
                 size="sm"
-                className="bg-button-bg text-text-primary hover:bg-button-hover"
+                className="min-h-11 max-w-full bg-button-bg text-text-primary hover:bg-button-hover"
                 asChild
               >
-                <a href="mailto:joeljesus30030@gmail.com">
+                <a className="min-w-0 max-w-full" href="mailto:joeljesus30030@gmail.com">
                   <svg className="mr-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
-                  joeljesus30030@gmail.com
+                  <span className="break-all">joeljesus30030@gmail.com</span>
                 </a>
               </Button>
               
               <Button
                 variant="ghost"
                 size="icon"
-                className="bg-button-bg hover:bg-button-hover text-button-icon"
+                className="h-11 w-11 bg-button-bg text-button-icon hover:bg-button-hover sm:h-9 sm:w-9"
                 asChild
               >
                 <a href="CV_Joel_Medina.pdf" aria-label="CV" target="_blank">
@@ -60,7 +60,7 @@ export default function Portfolio() {
               <Button
                 variant="ghost"
                 size="icon"
-                className="bg-button-bg hover:bg-button-hover text-button-icon"
+                className="h-11 w-11 bg-button-bg text-button-icon hover:bg-button-hover sm:h-9 sm:w-9"
                 asChild
               >
                 <a href="https://github.com/jjmmcode" aria-label="GitHub" target="_blank">
@@ -71,7 +71,7 @@ export default function Portfolio() {
               <Button
                 variant="ghost"
                 size="icon"
-                className="bg-button-bg hover:bg-button-hover text-button-icon"
+                className="h-11 w-11 bg-button-bg text-button-icon hover:bg-button-hover sm:h-9 sm:w-9"
                 asChild
               >
                 <a href="https://www.linkedin.com/in/jjmmcode/" aria-label="LinkedIn" target="_blank">
