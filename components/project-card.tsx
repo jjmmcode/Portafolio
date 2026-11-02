@@ -45,13 +45,13 @@ export function ProjectCard({
           </div>
 
           <div className="min-w-0 flex-1">
-            <div className="mb-4">
+            <div className="mb-3 sm:mb-4">
               <h3 className="text-lg font-semibold tracking-tight text-text-primary">{title}</h3>
               <p className="mt-1 text-sm font-medium text-text-secondary">{subtitle}</p>
-              <p className="mt-3 max-w-2xl text-sm leading-relaxed text-text-muted">{description}</p>
+              <p className="mt-2 max-w-2xl text-sm leading-[1.6] text-text-muted sm:mt-3 sm:leading-relaxed">{description}</p>
             </div>
 
-            <div className="mb-4 flex flex-wrap gap-2" aria-label={`Tecnologías utilizadas en ${title}`}>
+            <div className="mb-3 flex flex-wrap gap-2 sm:mb-4" aria-label={`Tecnologías utilizadas en ${title}`}>
               {technologies.map((tech, index) => (
                 <TechBadge key={`${tech.label}-${index}`} icon={tech.icon} label={tech.label} />
               ))}
