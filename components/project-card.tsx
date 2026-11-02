@@ -60,7 +60,7 @@ export function ProjectCard({
             {(links?.demo || links?.github || links?.evidence) && (
               <div className="flex flex-wrap gap-2">
                 {links.demo && (
-                  <Button variant="ghost" size="sm" className="h-9 gap-2 rounded-md border border-stone-light bg-stone px-3 text-text-secondary hover:bg-stone-light hover:text-text-primary" asChild>
+                  <Button variant="ghost" size="sm" className="h-10 gap-2 rounded-md border border-stone-light bg-stone px-3 text-text-secondary hover:bg-stone-light hover:text-text-primary" asChild>
                     <a href={links.demo} target="_blank" rel="noopener noreferrer" aria-label={`Ver demo de ${title}`}>
                       <ExternalLink className="h-4 w-4" aria-hidden="true" />
                       <span>Demo</span>
@@ -68,7 +68,7 @@ export function ProjectCard({
                   </Button>
                 )}
                 {links.evidence && (
-                  <Button variant="ghost" size="sm" className="h-9 gap-2 rounded-md border border-stone-light bg-stone px-3 text-text-secondary hover:bg-stone-light hover:text-text-primary" asChild>
+                  <Button variant="ghost" size="sm" className="h-10 gap-2 rounded-md border border-stone-light bg-stone px-3 text-text-secondary hover:bg-stone-light hover:text-text-primary" asChild>
                     <a href={links.evidence} target="_blank" rel="noopener noreferrer" aria-label={`Ver evidencias de ${title}`}>
                       <ExternalLink className="h-4 w-4" aria-hidden="true" />
                       <span>Ver evidencias</span>
@@ -76,7 +76,7 @@ export function ProjectCard({
                   </Button>
                 )}
                 {links.github && (
-                  <Button variant="ghost" size="sm" className="h-9 gap-2 rounded-md border border-stone-light bg-stone px-3 text-text-secondary hover:bg-stone-light hover:text-text-primary" asChild>
+                  <Button variant="ghost" size="sm" className="h-10 gap-2 rounded-md border border-stone-light bg-stone px-3 text-text-secondary hover:bg-stone-light hover:text-text-primary" asChild>
                     <a href={links.github} target="_blank" rel="noopener noreferrer" aria-label={`Ver código de ${title} en GitHub`}>
                       <Github className="h-4 w-4" aria-hidden="true" />
                       <span>GitHub</span>
