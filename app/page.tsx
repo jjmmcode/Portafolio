@@ -232,9 +232,16 @@ export default function Portfolio() {
 
           <ProjectCard
             title="Anvil of Ambition"
-            subtitle="Proyecto de título · Código original privado"
-            description="Información del proyecto pendiente de completar con datos verificados."
-            technologies={[]}
+            subtitle="2D RPG · Proyecto de Título"
+            description="Videojuego RPG 2D desarrollado en Godot como proyecto de título de Ingeniería en Informática en Duoc UC. Participé en el desarrollo de menús e interfaces, sistema de combate por turnos, estadísticas y progresión del jugador, y persistencia de opciones."
+            technologies={[
+              { icon: 'godot', label: 'Godot 4.7' },
+              { icon: 'gdscript', label: 'GDScript' },
+              { icon: 'gamepad-2', label: 'Game Development' },
+              { icon: 'layout-dashboard', label: 'UI Development' },
+              { icon: 'swords', label: 'Game Systems' },
+            ]}
+            links={{ evidence: 'https://github.com/jjmmcode/CAPSTONE-G6-2026-02' }}
             icon="hammer"
           />
         </section>

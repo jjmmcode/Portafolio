@@ -13,6 +13,7 @@ interface ProjectCardProps {
   links?: {
     demo?: string
     github?: string
+    evidence?: string
   }
   icon?: 'package' | 'check' | 'bot' | 'hammer'
 }
@@ -56,13 +57,21 @@ export function ProjectCard({
               ))}
             </div>
 
-            {(links?.demo || links?.github) && (
+            {(links?.demo || links?.github || links?.evidence) && (
               <div className="flex flex-wrap gap-2">
                 {links.demo && (
                   <Button variant="ghost" size="sm" className="h-9 gap-2 rounded-md border border-stone-light bg-stone px-3 text-text-secondary hover:bg-stone-light hover:text-text-primary" asChild>
                     <a href={links.demo} target="_blank" rel="noopener noreferrer" aria-label={`Ver demo de ${title}`}>
                       <ExternalLink className="h-4 w-4" aria-hidden="true" />
                       <span>Demo</span>
+                    </a>
+                  </Button>
+                )}
+                {links.evidence && (
+                  <Button variant="ghost" size="sm" className="h-9 gap-2 rounded-md border border-stone-light bg-stone px-3 text-text-secondary hover:bg-stone-light hover:text-text-primary" asChild>
+                    <a href={links.evidence} target="_blank" rel="noopener noreferrer" aria-label={`Ver evidencias de ${title}`}>
+                      <ExternalLink className="h-4 w-4" aria-hidden="true" />
+                      <span>Ver evidencias</span>
                     </a>
                   </Button>
                 )}
