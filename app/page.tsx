@@ -153,10 +153,12 @@ export default function Portfolio() {
           
           <ExperienceCard
             title="Ingeniero de Datos Jr."
-            company="2STG y Líder BCI"
-            period="dic. 2025 - Actualidad"
-            description="Desarrollo y mantenimiento de pipelines ETL; orquestación de procesos mediante Apache Airflow; trabajo con AWS S3, Glue, Athena e IAM; procesamiento y transformación con Python y SQL; monitoreo con Grafana; investigación y resolución de incidencias en flujos de datos; y colaboración con equipos técnicos en entornos de producción."
+            company="2STG"
+            period="Diciembre 2025 – Actualidad"
+            description="Desarrollo, mantenimiento y supervisión de pipelines ETL, integrando procesos de ingesta, transformación y consulta de datos mediante servicios de AWS como S3, Glue y Athena. Orquestación de flujos con Apache Airflow, procesamiento y validación mediante Python y SQL, monitoreo con Grafana y resolución de incidencias técnicas en procesos de datos."
             icon={Database}
+            current
+            modality="Remoto"
           />
 
           <ExperienceCard

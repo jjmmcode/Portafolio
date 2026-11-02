@@ -7,9 +7,11 @@ interface ExperienceCardProps {
   period: string
   description: string
   icon?: LucideIcon
+  current?: boolean
+  modality?: string
 }
 
-export function ExperienceCard({ title, company, period, description, icon: Icon = PhoneCall }: ExperienceCardProps) {
+export function ExperienceCard({ title, company, period, description, icon: Icon = PhoneCall, current, modality }: ExperienceCardProps) {
   return (
     <div className="mb-8 flex gap-4">
       <div className="flex-shrink-0">
@@ -20,10 +22,20 @@ export function ExperienceCard({ title, company, period, description, icon: Icon
       
       <div className="flex-1">
         <div className="mb-2 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-          <h3 className="text-lg font-semibold">{title}</h3>
+          <div className="flex flex-wrap items-center gap-2">
+            <h3 className="text-lg font-semibold">{title}</h3>
+            {current && (
+              <span className="rounded-full border border-stone-light px-2 py-0.5 text-xs font-medium text-text-muted">
+                Empleo actual
+              </span>
+            )}
+          </div>
           <span className="text-sm text-text-muted">{period}</span>
         </div>
-        <p className="mb-3 text-text-secondary">{company}</p>
+        <p className="mb-3 text-text-secondary">
+          {company}
+          {modality && <span className="text-text-muted"> · {modality}</span>}
+        </p>
         <p className="leading-relaxed text-text-muted text-sm">{description}</p>
       </div>
     </div>
