@@ -192,7 +192,6 @@ export default function Portfolio() {
               { icon: 'postman', label: 'Postman' },
             ]}
             image="/project_1.png"
-            links={{}}
           />
           
           <ProjectCard
@@ -208,6 +207,7 @@ export default function Portfolio() {
               { icon: 'python', label: 'python-docx' },
             ]}
             links={{ github: 'https://github.com/jjmmcode/GoldenAgeManager' }}
+            icon="bot"
           />
 
           <ProjectCard
@@ -233,6 +233,7 @@ export default function Portfolio() {
             subtitle="Proyecto de título · Código original privado"
             description="Información del proyecto pendiente de completar con datos verificados."
             technologies={[]}
+            icon="hammer"
           />
         </section>
 
