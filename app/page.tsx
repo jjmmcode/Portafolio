@@ -192,7 +192,6 @@ export default function Portfolio() {
               { icon: 'postman', label: 'Postman' },
             ]}
             image="/project_1.png"
-            links={{}}
           />
           
           <ProjectCard
@@ -204,11 +203,12 @@ export default function Portfolio() {
               { icon: 'python', label: 'discord.py' },
               { icon: 'python', label: 'asyncio' },
               { icon: 'json', label: 'JSON' },
-              { icon: 'python', label: 'openpyxl' },
-              { icon: 'python', label: 'python-docx' },
-            ]}
-            links={{ github: 'https://github.com/jjmmcode/GoldenAgeManager' }}
-          />
+  { icon: 'python', label: 'openpyxl' },
+  ]}
+  image="/golden-age-manager.png"
+  imageAlt="Golden Age Manager — Discord automation bot for Dragon Mine Z"
+  icon="bot"
+  />
 
           <ProjectCard
             title="To-Do App"
@@ -233,6 +233,7 @@ export default function Portfolio() {
             subtitle="Proyecto de título · Código original privado"
             description="Información del proyecto pendiente de completar con datos verificados."
             technologies={[]}
+            icon="hammer"
           />
         </section>
 
