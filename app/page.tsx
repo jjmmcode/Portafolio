@@ -15,13 +15,13 @@ export default function Portfolio() {
         {/* Header Section */}
         <div className="mb-12 flex flex-col items-start gap-6 md:flex-row md:items-center">
           <Avatar className="h-32 w-32 border-2 border-stone-light">
-            <AvatarImage src="/avatar.jpeg" alt="Joel M. Morales" />
+            <AvatarImage src="/avatar.jpeg" alt="Joel Medina" />
             <AvatarFallback>JM</AvatarFallback>
           </Avatar>
           
           <div className="flex-1">
-            <h1 className="mb-2 text-4xl font-bold text-balance">Joel M. Morales</h1>
-            <p className="mb-3 text-xl text-text-secondary">Programador</p>
+            <h1 className="mb-2 text-4xl font-bold text-balance">Joel Medina</h1>
+            <p className="mb-3 text-xl text-text-secondary">Junior Data Engineer &amp; Software Developer</p>
             <div className="mb-4 flex items-center gap-2 text-text-muted">
               <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
@@ -86,9 +86,7 @@ export default function Portfolio() {
         <section className="mb-12">
           <h2 className="mb-4 text-2xl font-semibold">Sobre mí</h2>
           <p className="leading-relaxed text-text-secondary">
-            Desarrollador web y backend con pasión por crear soluciones eficientes. 
-            Actualmente curso Ingeniería en Informática y me especializo en el uso de 
-            tecnologías como Laravel, Python, y base de datos.
+            Soy Ingeniero de Datos Jr. y desarrollador de software, con experiencia en el diseño, mantenimiento y monitoreo de pipelines de datos, automatización de procesos y desarrollo de aplicaciones. Me interesa construir soluciones eficientes, escalables y mantenibles utilizando tecnologías cloud y herramientas modernas de desarrollo.
           </p>
         </section>
 
@@ -98,56 +96,51 @@ export default function Portfolio() {
         <section>
           <h2 className="mb-6 text-2xl font-semibold">Tecnologías con las que trabajo</h2>
           
-          {/* Frontend */}
           <div className="mb-6">
-            <h3 className="mb-3 text-lg font-medium text-text-secondary">Frontend</h3>
+            <h3 className="mb-3 text-lg font-medium text-text-secondary">Data Engineering</h3>
             <div className="flex flex-wrap gap-2">
-              <TechBadge icon="html5" label="HTML" />
-              <TechBadge icon="css3" label="CSS" />
-              <TechBadge icon="react" label="React" variant="original" />
-            </div>
-          </div>
-
-          {/* Backend */}
-          <div className="mb-6">
-            <h3 className="mb-3 text-lg font-medium text-text-secondary">Backend</h3>
-            <div className="flex flex-wrap gap-2">
-              <TechBadge icon="php" label="PHP" />
               <TechBadge icon="python" label="Python" />
-              <TechBadge icon="java" label="Java" />
-              <TechBadge icon="csharp" label="C#" />
+              <TechBadge icon="mysql" label="SQL" />
+              <TechBadge icon="airflow" label="Apache Airflow" />
+              <TechBadge icon="amazonwebservices" label="AWS Glue" />
+              <TechBadge icon="databricks" label="Databricks" />
+              <TechBadge icon="python" label="ETL/ELT" />
             </div>
           </div>
 
-          {/* Base de Datos */}
           <div className="mb-6">
-            <h3 className="mb-3 text-lg font-medium text-text-secondary">Base de Datos</h3>
+            <h3 className="mb-3 text-lg font-medium text-text-secondary">Cloud &amp; Monitoring</h3>
             <div className="flex flex-wrap gap-2">
-              <TechBadge icon="mysql" label="MySQL" />
-              <TechBadge icon="postgresql" label="PostgreSQL" />
+              <TechBadge icon="amazonwebservices" label="AWS S3" />
+              <TechBadge icon="amazonwebservices" label="Athena" />
+              <TechBadge icon="amazonwebservices" label="IAM" />
+              <TechBadge icon="grafana" label="Grafana" />
+              <TechBadge icon="apachekafka" label="Kafka" />
             </div>
           </div>
 
-          {/* Frameworks */}
           <div className="mb-6">
-            <h3 className="mb-3 text-lg font-medium text-text-secondary">Frameworks</h3>
+            <h3 className="mb-3 text-lg font-medium text-text-secondary">Software Development</h3>
             <div className="flex flex-wrap gap-2">
+              <TechBadge icon="react" label="React" variant="original" />
+              <TechBadge icon="nextjs" label="Next.js" />
+              <TechBadge icon="typescript" label="TypeScript" />
+              <TechBadge icon="javascript" label="JavaScript" />
               <TechBadge icon="laravel" label="Laravel" />
-              <TechBadge icon="nodejs" label="Node.js" />
-              <TechBadge icon="ionic" label="Ionic" variant="original" />
+              <TechBadge icon="php" label="PHP" />
+              <TechBadge icon="dotnetcore" label=".NET" />
+              <TechBadge icon="rest" label="REST APIs" />
             </div>
           </div>
 
-          {/* Herramientas */}
           <div className="mb-6">
-            <h3 className="mb-3 text-lg font-medium text-text-secondary">Herramientas</h3>
+            <h3 className="mb-3 text-lg font-medium text-text-secondary">Tools &amp; Databases</h3>
             <div className="flex flex-wrap gap-2">
               <TechBadge icon="git" label="Git" />
-              <TechBadge icon="vscode" label="VS Code" />
-              <TechBadge icon="visualstudio" label="Visual Studio" />
-              <TechBadge icon="postman" label="Postman" />
+              <TechBadge icon="github" label="GitHub" />
               <TechBadge icon="docker" label="Docker" />
-              <TechBadge icon="excel" label="Excel" />
+              <TechBadge icon="postman" label="Postman" />
+              <TechBadge icon="mysql" label="MySQL" />
             </div>
           </div>
         </section>
@@ -162,7 +155,7 @@ export default function Portfolio() {
             title="Ingeniero de Datos Jr."
             company="2STG y Líder BCI"
             period="dic. 2025 - Actualidad"
-            description="Desarrollo y mantengo pipelines de datos en entornos cloud (AWS y Databricks), participo en procesos de integración entre equipos de Arquitectura, Aplicaciones y SRE, y apoyo en la implementación de soluciones orientadas a gobernanza, calidad y disponibilidad de datos. Colaboro con la Product Owner en la definición de tareas y prioridades, y doy soporte técnico en la operación diaria del área de Arquitectura Digital."
+            description="Desarrollo y mantenimiento de pipelines ETL; orquestación de procesos mediante Apache Airflow; trabajo con AWS S3, Glue, Athena e IAM; procesamiento y transformación con Python y SQL; monitoreo con Grafana; investigación y resolución de incidencias en flujos de datos; y colaboración con equipos técnicos en entornos de producción."
             icon={Database}
           />
 
@@ -188,7 +181,7 @@ export default function Portfolio() {
           
           <ProjectCard
             title="Ferremas APPs"
-            subtitle="Proyecto Ferremas"
+            subtitle="Proyecto Ferremas · Repositorio privado"
             description="Aplicación web diseñada para gestionar productos, tipos de productos, marcas de productos y precios históricos, con funcionalidades CRUD completas y consumo de APIs REST."
             technologies={[
               { icon: 'laravel', label: 'Laravel' },
@@ -199,12 +192,24 @@ export default function Portfolio() {
               { icon: 'postman', label: 'Postman' },
             ]}
             image="/project_1.png"
-            links={{
-              demo: '#',
-              github: 'https://github.com/jjmmcode/cl_ferremas_monolitico-laravel', // agregado enlace de GitHub de Ferremas
-            }}
+            links={{}}
           />
           
+          <ProjectCard
+            title="Golden Age Manager"
+            subtitle="Discord Community Management &amp; Automation"
+            description="Sistema de automatización desarrollado en Python para administrar comunidades de Discord, incluyendo procesamiento de solicitudes, sincronización de roles, gestión de personajes y mentores, generación de reportes y persistencia de estados."
+            technologies={[
+              { icon: 'python', label: 'Python' },
+              { icon: 'python', label: 'discord.py' },
+              { icon: 'python', label: 'asyncio' },
+              { icon: 'json', label: 'JSON' },
+              { icon: 'python', label: 'openpyxl' },
+              { icon: 'python', label: 'python-docx' },
+            ]}
+            links={{ github: 'https://github.com/jjmmcode/GoldenAgeManager' }}
+          />
+
           <ProjectCard
             title="To-Do App"
             subtitle="PWA con React y .NET"
@@ -221,6 +226,13 @@ export default function Portfolio() {
               github: 'https://github.com/jjmmcode/To_Do_App', // agregado enlace de GitHub de To-Do App
             }}
             icon="check"
+          />
+
+          <ProjectCard
+            title="Anvil of Ambition"
+            subtitle="Proyecto de título · Código original privado"
+            description="Información del proyecto pendiente de completar con datos verificados."
+            technologies={[]}
           />
         </section>
 

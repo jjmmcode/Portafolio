@@ -7,8 +7,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Joel M. Morales - Portafolio',
-  description: 'Desarrollador web y backend con pasión por crear soluciones eficientes',
+  title: 'Joel Medina | Junior Data Engineer & Software Developer',
+  description: 'Portafolio profesional de Joel Medina. Ingeniería de datos, Python, AWS, automatización, desarrollo de software y proyectos tecnológicos.',
   generator: 'v0.app',
   icons: {
     icon: [
