@@ -247,8 +247,9 @@ export default function Portfolio() {
           <EducationCard
             institution="Duoc UC"
             degree="Ingeniería en Informática"
-            period="2021 - Actualidad"
-            description="Actualmente cursando el cuarto año de la carrera, desarrollando proyectos web y APIs utilizando tecnologías modernas como Laravel, Python y bases de datos relacionales."
+            period="2021 – 2026"
+            description="Plan de asignaturas completado en 2026, con formación en desarrollo de software, programación, bases de datos, integración de APIs y tecnologías cloud. Actualmente en proceso de titulación."
+            status="Pendiente de titulación"
           />
         </section>
 
